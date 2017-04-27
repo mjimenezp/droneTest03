@@ -9,8 +9,8 @@ pipeline:
       docker:
         debug: true
         image: plugins/docker
-        registry: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000
-        repo: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000/testnode
-        tag: latest
         dockerfile: Dockerfile
         insecure: true
+        registry: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000
+        repo: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000/dronetest03
+        tags: latest
