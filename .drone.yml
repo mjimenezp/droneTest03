@@ -6,11 +6,10 @@ pipeline:
       - npm install
       - npm test
     publish:
-      docker:
-        debug: true
-        image: plugins/docker
-        dockerfile: Dockerfile
-        insecure: true
-        registry: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000
-        repo: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000/dronetest03
-        tags: latest
+      image: plugins/docker
+      debug: true
+      dockerfile: Dockerfile
+      insecure: true
+      registry: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000
+      repo: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000/dronetest03
+      tags: latest
