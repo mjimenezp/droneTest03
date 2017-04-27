@@ -1,0 +1,13 @@
+build:
+  image: node:5.11.1
+  commands:
+  - echo "build commands"
+  - npm install
+  - npm test
+
+publish:
+  docker:
+    repo: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000/testnode
+    tag: latest
+    dockerfile: Dockerfile
+    insecure: true
