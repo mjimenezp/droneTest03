@@ -5,11 +5,9 @@ pipeline:
       - echo "build commands"
       - npm install
       - npm test
-
     publish:
       docker:
         debug: true
-        image: plugins/docker
         registry: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000
         repo: ec2-52-88-58-236.us-west-2.compute.amazonaws.com:5000/testnode
         tag: latest
